@@ -1,0 +1,15 @@
+
+fc fact(n: int) => int {
+    if n <= 1 {
+        return 1
+    }
+    return n * fact(n-1)
+}
+
+fc main() {
+    var a: int = 3
+
+    var b : int = fact(a)
+
+    print(b)
+}

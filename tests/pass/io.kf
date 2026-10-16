@@ -1,0 +1,7 @@
+fc main() {
+    var a: int = 10
+    var b: flt = 2.5
+    var c: stg = "test"
+    printf("a=", a, ", b=", b, ", c=", c, "\n")
+    printf("", a, "\n")
+}

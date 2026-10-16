@@ -1,0 +1,18 @@
+fc main() {
+    printf("=== Test 1: Simple Printf ===\n")
+    printf("hello")
+    printf(" world\n")
+
+    var a: int = 123
+    printf("=== Test 2: Printf without %d ===\n")
+    printf("Value of a is: ", a, "\n")
+    printf("", a, "\n")
+
+    var num: int
+    scanf("enter a num: ", num)
+    printf("You entered num: ", num, "\n")
+
+    var name: stg
+    scanf("enter your name: ", name)
+    printf("Hello, ", name, "!\n")
+}

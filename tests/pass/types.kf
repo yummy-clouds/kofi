@@ -1,0 +1,15 @@
+fc main() {
+    var i: int = 100
+    var f: flt = 9.99
+    var b1: bln = true
+    var b2: bln = false
+    var s: stg = "test passed"
+    var n: nil = nil
+
+    printf("", i, "\n")
+    printf("", f, "\n")
+    printf("", b1, "\n")
+    printf("", b2, "\n")
+    printf("", s, "\n")
+    printf("", n, "\n")
+}

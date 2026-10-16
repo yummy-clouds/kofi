@@ -1,0 +1,3 @@
+fc main() {
+    var x: unknown_type = 10
+}

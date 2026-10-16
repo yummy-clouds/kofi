@@ -1,0 +1,40 @@
+fc test_types() {
+    var a: int = 42
+    var b: flt = 3.14
+    var c: bln = true
+    var d: bln = false
+    var e: stg = "kofi language"
+    var f: nil = nil
+
+    printf("--- Testing initialized types ---\n")
+    printf("", a, "\n")
+    printf("", b, "\n")
+    printf("", c, "\n")
+    printf("", d, "\n")
+    printf("", e, "\n")
+    printf("", f, "\n")
+
+    printf("--- Testing uninitialized nil types ---\n")
+    var uninit_str: stg
+    var uninit_nil: nil
+    var uninit_any
+    printf("", uninit_str, "\n")
+    printf("", uninit_nil, "\n")
+    printf("", uninit_any, "\n")
+}
+
+fc add_flt(x: flt, y: flt) => flt {
+    return x + y
+}
+
+fc is_positive(x: int) => bln {
+    return x > 0
+}
+
+fc main() {
+    test_types()
+    printf("--- Functions with new types ---\n")
+    printf("", add_flt(1.5, 2.5), "\n")
+    printf("", is_positive(10), "\n")
+    printf("", is_positive(-5), "\n")
+}

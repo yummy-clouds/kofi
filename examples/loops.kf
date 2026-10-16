@@ -1,0 +1,33 @@
+fc main() {
+    printf("--- 1. Three-clause for loop ---\n")
+    for var i: int = 1; i <= 5; i = i + 1 {
+        printf("", i, "\n")
+    }
+
+    printf("--- 2. While-style condition loop ---\n")
+    var count: int = 3
+    for count > 0 {
+        printf("", count, "\n")
+        count = count - 1
+    }
+
+    printf("--- 3. Infinite loop with break ---\n")
+    var step: int = 0
+    for {
+        step = step + 1
+        if step == 3 {
+            printf("breaking at step:\n")
+            printf("", step, "\n")
+            break
+        }
+    }
+
+    printf("--- 4. Loop with continue ---\n")
+    for var j: int = 0; j < 6; j = j + 1 {
+        if j % 2 == 0 {
+            continue
+        }
+        printf("odd number:\n")
+        printf("", j, "\n")
+    }
+}
